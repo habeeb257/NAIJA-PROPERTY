@@ -1,0 +1,33 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --bg-color:#ffff;
+  --text-color:#111;
+  --font-family:"monospace";
+}
+body{
+  background-color: var(--bg-color);
+  color: var(var(--text-color));
+  font-family: var(--font-family);
+}
+.container{
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 0px 1rem;
+}
+img{
+width: 100%;
+height: auto;
+display: block;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style-type: none;
+  color: #111;
+}
