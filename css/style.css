@@ -20,8 +20,8 @@ body{
 }
 img{
 width: 100%;
-height: auto;
-display: block;
+/* height: auto;
+ display: block;  */
 }
 a{
   text-decoration: none;
