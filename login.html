@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+         <div class="login-card">
+      <h2>Login</h2>
+   
+        <form id="loginForm">
+          <div class="form-email">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <section class="form-password">
+            <div class="form-content">
+              <label for="password">Password</label>
+              <input
+                class="input-password"
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+              <span class="fa-regular fa-eye" id="fa-eye"></span>
+              <span class="fa-regular fa-eye-slash" id="fa-eye-slash"></span>
+            </div>
+          </section>
+
+          <section class="extras-container">
+            <div class="extras" id="extras">
+            <i class="fa-solid fa-toggle-off" id="fa-toggle-off"></i>
+            <i class="fa-solid fa-toggle-on" id="fa-toggle-on"></i>
+            <p>Remember me</p>
+             </div>
+            <div>
+             <a href="" class="forgot">Forgot password?</a>
+            </div>
+         
+          </section>
+
+          <button type="submit" class="login-btn"><a href="">Login</a></button>
+
+          <div class="divider">Or login with</div>
+
+          <div class="social-login">
+            <button class="google"><i class="fa-brands fa-google"></i></button>
+            <button class="apple"><i class="fa-brands fa-apple"></i></button>
+            <button class="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div>
+           <p class="signup-text">Don’t have   account? <a href="#">Signup</a></p>
+      </div>
+    </div>
+
+    <script src="js/app-5.js"></script>
+  </body>
+</html>
