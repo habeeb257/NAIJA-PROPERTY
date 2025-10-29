@@ -1,11 +1,14 @@
-const email  = document.getElementById("email")
+
+const firstName = document.getElementById("firstname");
+const lastName = document.getElementById("lastname");
+const email = document.getElementById("email");
 const password = document.getElementById("password");
+
 const formSubmit = document.getElementById("formSubmit");
 let eye = document.getElementById("fa-eye");
 let eyeSlash = document.getElementById("fa-eye-slash");
 
 
-// creating a function to execute
 const togglePasswordIcon = () => {
   if (password.type === "password") {
     password.type = "text";
@@ -18,20 +21,24 @@ const togglePasswordIcon = () => {
   }
 };
 
-
-// form submission
 const handleSubmit = (e) => {
   e.preventDefault();
-  // getting the value of the input
+  
+  const firstNameValue = firstName.value;
+  const lastNameValue = lastName.value;
   const emailValue = email.value;
   const passwordValue = password.value;
 
-  // saving the data to local storage
-  localStorage.getItem("email");
-  localStorage.getItem("password");
+  
+  localStorage.getItem("firstName", firstNameValue);
+  localStorage.getItem("lastName", lastNameValue);
+  localStorage.getItem("email", emailValue);
+  localStorage.getItem("password", passwordValue);
 
-  // validating the data
+
   if (
+    firstNameValue === "" ||
+    lastNameValue === "" ||
     emailValue === "" ||
     passwordValue === ""
   ) {
@@ -58,23 +65,14 @@ const handleSubmit = (e) => {
       showConfirmButton: false,
       timer: 1500,
     });
-    // redirecting programatically to the login page
+    
     setTimeout(() => {
-      window.location.href = "home-page.html";
+      window.location.href = "login.html";
     }, 3000);
   }
 };
-
-
-
-
-
 
 // Adding event
 eye.addEventListener("click", togglePasswordIcon);
 eyeSlash.addEventListener("click", togglePasswordIcon);
 formSubmit.addEventListener("submit", handleSubmit);
-
-
-
-

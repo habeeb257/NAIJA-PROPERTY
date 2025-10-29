@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta
+    <meta
       name="description"
       content="This is a real estate platform where users can browse, search, and filter properties, the sites will showcase listings with details information, contact details"
     />
@@ -15,9 +15,9 @@
     with details information, contact details."
       kewword="listings, properties,estate"
     />
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/login.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./css/sign-up.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <link
       rel="stylesheet"
@@ -29,10 +29,25 @@
   </head>
   <body>
     <div class="login-container">
-         <div class="login-card">
-      <h2>Login</h2>
-   
+      <div class="login-card">
+        <h2>Login</h2>
+
         <form id="formSubmit">
+          <div class="first-name">
+            <label for="firstname">firstname</label>
+            <input
+              type="name"
+              id="firstname"
+              placeholder="firstname"
+              required
+            />
+          </div>
+
+          <div class="last-name">
+            <label for="lastname">lastname</label>
+            <input type="name" id="lastname" placeholder="lastname" required />
+          </div>
+
           <div class="form-email">
             <label for="email">Email</label>
             <input
@@ -58,19 +73,19 @@
 
           <section class="extras-container">
             <div class="extras" id="extras">
-            <i class="fa-solid fa-toggle-off" id="fa-toggle-off"></i>
-            <i class="fa-solid fa-toggle-on" id="fa-toggle-on"></i>
-            <p>Remember me</p>
-             </div>
-            <div>
-             <a href="" class="forgot">Forgot password?</a>
+              <i class="fa-solid fa-toggle-off" id="fa-toggle-off"></i>
+              <i class="fa-solid fa-toggle-on" id="fa-toggle-on"></i>
+              <p>Remember me</p>
             </div>
-         
+            <div>
+              <a href="" class="forgot">Forgot password?</a>
+            </div>
           </section>
+          <div class="btn">
+            <button id="reg-btn" type="submit" value="Submit">sign-up</button>
+          </div>
 
-          <button type="submit" class="login-btn"><a href="">Login</a></button>
-
-          <div class="divider">Or login with</div>
+          <div class="divider">Or sign-up with</div>
 
           <div class="social-login">
             <button class="google"><i class="fa-brands fa-google"></i></button>
@@ -81,11 +96,11 @@
           </div>
         </form>
       </div>
-      <div>
-           <p class="signup-text">Don’t have   account? <a href="./sign-up.html">Signup</a></p>
+      <div class="signup-text">
+        <a href="./login.html">Already have an account? <span>Login</span></a>
       </div>
     </div>
     <script src="/sweetAlert.js"></script>
-    <script src="js/app-5.js"></script>
+    <script src="/js/app-6.js"></script>
   </body>
 </html>
