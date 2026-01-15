@@ -1,6 +1,12 @@
-.nav-contairner {
+.nav-container {
   background-image: url(/Assets/Image.png);
   position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .menu-bar {
@@ -22,7 +28,7 @@
 
 .nav-content-1 h3 {
   color: #dad6c4;
-  font: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 200;
   font-size: 20px;
 }
@@ -40,7 +46,7 @@ ul {
 
 a {
   color: #ffffff;
-  font: Rufina;
+  font-family: "Rufina", serif;
   font-weight: 200;
   font-size: 18px;
 }
@@ -49,7 +55,6 @@ a {
 .hero-container {
   background-image: url(/Assets/Image.png);
   height: 250px;
-  
 }
 
 .hero-content {
@@ -57,6 +62,8 @@ a {
   flex-direction: column;
   gap: 3rem;
 }
+
+
 .hero-content-1 {
   display: flex;
   flex-direction: column;
@@ -65,17 +72,15 @@ a {
 }
 .hero-content-1 h2 {
   color: #ffffff;
-  font: Rufina;
-  font-weight: 300;
+  font-family: "Rufina", serif;
+  font-weight: 700;
   font-size: 50px;
-  font-style: bold;
 }
 .hero-content-1 h6 {
   color: #c9bdab;
-  font: Raleway;
-  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   font-size: 23px;
-  font-style: medium;
 }
 .hero-content-2 {
   display: flex;
@@ -95,8 +100,7 @@ a {
 .hero-content-2 select {
   border: none;
 }
-.hero-content-2 p{
-
+.hero-content-2 p {
   color: #f5e9d6;
 }
 
@@ -176,7 +180,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-   gap: 5rem; 
+  gap: 5rem;
 }
 .message-container {
   display: flex;
@@ -204,9 +208,8 @@ a {
 }
 
 .message-content-1 {
-  font: Rufina;
+  font-family: "Rufina", serif;
   font-weight: 700;
-  font-style: Bold;
   color: #f5e9d6;
 }
 .message-content-1-items {
@@ -231,8 +234,8 @@ a {
 }
 .message-content-2 form {
   color: #5b656f;
-  font: raleway;
-  font-style: Medium;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 
 .form-input {
@@ -277,8 +280,8 @@ a {
   flex-direction: column;
   gap: 1rem;
   color: #5b656f;
-  font-style: Regular;
-  font: raleway;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 .footer-content-2 {
   display: flex;
@@ -286,8 +289,8 @@ a {
   gap: 1rem;
   align-items: center;
   color: #181d24;
-  font-style: medium;
-  font: raleway;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 
 .footer-icon {
@@ -303,15 +306,14 @@ a {
   display: flex;
   gap: 10rem;
   color: #181d24;
-  font-style: regular;
-  font: raleway;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 .footer-content-3-item-1 {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-
 
 @media (max-width: 600px) {
   ul {
@@ -336,54 +338,101 @@ a {
     max-height: 300px;
   }
 
-.message-content{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+  .message-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-.big-container{
-  display: flex;
-  flex-direction: column;
-  gap: 8   rem; 
-  position: relative;
-}
-.message-container{
-  position: absolute;
-  top: 50px;
-  left: 30px;
-}
-.footer-content{
-  margin-top: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.footer-content-3{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.media{
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  padding: 5px;
-}
+  .big-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8 rem;
+    position: relative;
+  }
+  .message-container {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+  }
+  .footer-content {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-content-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .media {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px;
+  }
 
-.hero-content-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  /* justify-content: center; */
-}
-.hero-content-2 form {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  background-color: #ffffffff;
-  border: 10px #c9bdab;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+  .hero-content-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .hero-content-2 form {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: #ffffffff;
+    border: 10px #c9bdab;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  /* Mobile-only carousel: group 3 cards into a vertical slide and enable sideways sliding */
+  .villas-content {
+    position: relative;
+  }
+  .card-container {
+    /* switch to slider mode on mobile */
+    overflow: hidden;
+    padding: 0;
+    display: block; /* remove grid on mobile so slides can take full width */
+  }
+  .carousel-track {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.4s ease;
+    will-change: transform;
+  }
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 4px;
+  }
+  .property-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mobile-carousel-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #918675;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    z-index: 10;
+  }
+  .mobile-carousel-btn.prev {
+    left: 8px;
+  }
+  .mobile-carousel-btn.next {
+    right: 8px;
+  }
 }
