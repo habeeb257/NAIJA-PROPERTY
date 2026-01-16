@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-image: url(/Assets/header-image.png);
+  background-image: url(../asset/header-image.png);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
@@ -242,7 +242,7 @@ a {
   justify-content: center;
 }
 .region-content-2-item-1 {
-  background-image: url(/Assets/region-image-1.png);
+  background-image: url(../assets/region-image-1.png);
   height: 250px;
   width: 350px;
   padding-top: 180px;
@@ -261,7 +261,7 @@ a {
   color: #ffffff;
 }
 .region-content-2-item-2 {
-  background-image: url(/Assets/region-image-2.png);
+  background-image: url(../assets/region-image-2.png);
   height: 250px;
   width: 350px;
   padding-top: 180px;
@@ -315,7 +315,7 @@ a {
   display: flex;
   align-items: center;
   margin-top: 80px;
-  background-image: url(/Assets/host-image.png);
+  background-image: url(../assets/host-image.png);
   height: 400px;
   padding-right: 30px;
 }
