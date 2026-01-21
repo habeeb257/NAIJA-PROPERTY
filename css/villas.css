@@ -1,5 +1,5 @@
 .nav-container {
-  background-image: url(/Assets/Image.png);
+  background-image: url(../Assets/Image.png);
   position: sticky;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@ a {
 
 /* hero-content */
 .hero-container {
-  background-image: url(/Assets/Image.png);
+  background-image: url(../Assets/Image.png);
   height: 250px;
 }
 
@@ -252,7 +252,7 @@ a {
 }
 
 .background-container {
-  background-image: url(/Assets/message-image.png);
+  background-image: url(../Assets/message-image.png);
   height: 400px;
 }
 

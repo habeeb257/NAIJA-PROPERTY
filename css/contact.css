@@ -5,7 +5,7 @@
   right: 0;
   z-index: 1000;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-  background-image: url(/Assets/Image.png);
+  background-image: url(../Assets/Image.png);
 }
 
 .menu-bar {
@@ -52,7 +52,7 @@ a {
 
 /*  */
 .hero-container {
-  background-image: url(/Assets/contact-image-2.png);
+  background-image: url(../Assets/contact-image-2.png);
   height: 500px;
 }
 .hero-content {
